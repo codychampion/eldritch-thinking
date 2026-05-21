@@ -1,0 +1,22 @@
+name: test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm install
+      - run: npm test
+      - run: node bin/eldritch-thinking.js --help
+      - run: node bin/eldritch-thinking.js --list
+      - run: node bin/eldritch-thinking.js --pack academic
+      - run: npm pack --dry-run

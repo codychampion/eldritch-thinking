@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Eldritch Thinking Browser Example</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 3rem;
+        max-width: 42rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="status">Claude is thinking...</p>
+    <script type="module">
+      import { eldritchThinking } from "https://esm.sh/eldritch-thinking";
+
+      document.querySelector("#status").textContent = eldritchThinking({
+        pack: "agentic",
+        subject: "the agent"
+      });
+    </script>
+  </body>
+</html>
