@@ -78,12 +78,11 @@ console.log(listPacks());
 
 ## Publishing
 
-This package is prepared for npm publishing, but publishing should wait until npm account security and trusted publishing/provenance are configured.
+This package is prepared for npm publishing with GitHub Actions provenance. Configure npm trusted publishing for this repository before cutting the first release.
 
 ```bash
 npm test
 npm pack --dry-run
-npm publish --access public
 ```
 
 ## License
