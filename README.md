@@ -6,6 +6,8 @@ A tiny Lovecraftian status-message pack for AI apps, CLIs, dashboards, browser s
 
 Use it anywhere you would otherwise show `Thinking...`, `Loading...`, or the emotionally vacant spinner text that haunts modern software.
 
+Published on npm as [`eldritch-thinking`](https://www.npmjs.com/package/eldritch-thinking).
+
 ## Install
 
 ```bash
@@ -76,9 +78,9 @@ console.log(listPacks());
 </script>
 ```
 
-## Publishing
+## Release
 
-This package is prepared for npm publishing with GitHub Actions provenance. Configure npm trusted publishing for this repository before cutting the first release.
+Current npm release: `0.1.0`.
 
 ```bash
 npm test
