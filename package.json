@@ -4,7 +4,7 @@
   "description": "Lovecraftian thinking-status messages for AI apps, CLIs, dashboards, and agent UIs.",
   "type": "module",
   "bin": {
-    "eldritch-thinking": "./bin/eldritch-thinking.js"
+    "eldritch-thinking": "bin/eldritch-thinking.js"
   },
   "exports": {
     ".": "./src/index.js"
